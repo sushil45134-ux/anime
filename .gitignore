@@ -1,0 +1,16 @@
+node_modules/
+.next/
+out/
+build/
+dist/
+.env
+.env.local
+*.log
+.DS_Store
+.scratch/
+coverage/
+tsconfig.tsbuildinfo
+next-env.d.ts
+# working import lists can contain private/signed URLs — only the .sample is tracked
+data/import/*.csv
+data/import/*.json

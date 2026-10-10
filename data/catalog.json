@@ -1,0 +1,254 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-10",
+  "_comment": "Day-1 demo catalog. Sources are placeholders you can actually test against (public CC-licensed test media) plus one intentionally-broken Drive id so the 'Try another server' overlay is visible. tmdbId/poster/episode metadata get filled by `npm run sync:tmdb`. Real episode sources get bulk-filled by `npm run import:sources`.",
+  "series": [
+    {
+      "slug": "blue-box",
+      "tmdbId": 0,
+      "tmdbMediaType": "tv",
+      "title": "Blue Box",
+      "originalTitle": "Ao no Exo",
+      "year": 2024,
+      "type": "tv",
+      "status": "airing",
+      "genres": ["action", "sports", "romance"],
+      "synopsis": "A badminton club, a shared roof and two people chasing very different kinds of first place.",
+      "rating": 8.3,
+      "audio": "Sub & Dub",
+      "trendingRank": 1,
+      "seasons": [{ "number": 1, "episodeCount": 3 }],
+      "episodes": [
+        {
+          "id": "blue-box-s1e1",
+          "season": 1,
+          "number": 1,
+          "title": "The Boy and the Girl",
+          "overview": "Taiki inherits the gym's morning slot while Chinatsu hunts for a partner.",
+          "runtimeMinutes": 24,
+          "sources": [
+            {
+              "label": "Server 1 — HD",
+              "kind": "iframe",
+              "url": "about:blank",
+              "note": "Drive · not wired yet",
+              "lang": "unknown",
+              "enabled": false,
+              "provider": "drive-preview"
+            },
+            {
+              "label": "Server 2 — Fast",
+              "kind": "video",
+              "url": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+              "note": "HLS test stream",
+              "lang": "unknown",
+              "provider": "self-hosted"
+            },
+            {
+              "label": "Server 3 — Backup",
+              "kind": "iframe",
+              "url": "https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ",
+              "note": "Big Buck Bunny (CC) · iframe demo",
+              "lang": "unknown",
+              "provider": "direct-embed"
+            },
+            {
+              "label": "Server 4 — India",
+              "kind": "iframe",
+              "url": "https://drive.google.com/file/d/REPLACE_WITH_YOUR_DRIVE_FILE_ID/preview",
+              "note": "broken on purpose → failover overlay",
+              "lang": "unknown",
+              "provider": "drive-preview"
+            }
+          ]
+        },
+        {
+          "id": "blue-box-s1e2",
+          "season": 1,
+          "number": 2,
+          "title": "Practice Match",
+          "runtimeMinutes": 24,
+          "sources": [
+            {
+              "label": "Server 1 — HD",
+              "kind": "video",
+              "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+              "note": "MP4 · CC-licensed sample",
+              "provider": "self-hosted"
+            },
+            {
+              "label": "Server 2 — Fast",
+              "kind": "video",
+              "url": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+              "note": "HLS test stream",
+              "provider": "self-hosted"
+            },
+            {
+              "label": "Server 3 — Backup",
+              "kind": "iframe",
+              "url": "https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ",
+              "note": "iframe demo",
+              "provider": "direct-embed"
+            }
+          ]
+        },
+        {
+          "id": "blue-box-s1e3",
+          "season": 1,
+          "number": 3,
+          "title": "First Point",
+          "runtimeMinutes": 24,
+          "sources": [
+            {
+              "label": "Server 1 — HD",
+              "kind": "video",
+              "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+              "provider": "self-hosted"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "solo-leveling",
+      "tmdbId": 0,
+      "tmdbMediaType": "tv",
+      "title": "Solo Leveling",
+      "originalTitle": "Na Jayeul Seongjjang",
+      "year": 2024,
+      "type": "tv",
+      "status": "completed",
+      "genres": ["action", "fantasy", "adventure"],
+      "synopsis": "The weakest hunter alive awakens a system that lets him grow without a ceiling.",
+      "rating": 8.8,
+      "audio": "Sub & Dub",
+      "trendingRank": 2,
+      "seasons": [{ "number": 1, "episodeCount": 2 }],
+      "episodes": [
+        {
+          "id": "solo-leveling-s1e1",
+          "season": 1,
+          "number": 1,
+          "title": "Ability to Rise",
+          "runtimeMinutes": 24,
+          "sources": [
+            {
+              "label": "Server 1 — HD",
+              "kind": "video",
+              "url": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+              "note": "HLS · auto quality ladder",
+              "provider": "self-hosted"
+            },
+            {
+              "label": "Server 2 — Fast",
+              "kind": "video",
+              "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+              "provider": "self-hosted"
+            },
+            {
+              "label": "Server 3 — Backup",
+              "kind": "iframe",
+              "url": "https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ",
+              "provider": "direct-embed"
+            },
+            {
+              "label": "Server 4 — India",
+              "kind": "iframe",
+              "url": "about:blank",
+              "note": "Coming soon",
+              "enabled": false,
+              "provider": "coming-soon"
+            }
+          ]
+        },
+        {
+          "id": "solo-leveling-s1e2",
+          "season": 1,
+          "number": 2,
+          "title": "I'll Go on a Rampage",
+          "runtimeMinutes": 24,
+          "sources": [
+            {
+              "label": "Server 1 — HD",
+              "kind": "video",
+              "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+              "provider": "self-hosted"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "frieren-beyond-journeys-end",
+      "tmdbId": 0,
+      "tmdbMediaType": "tv",
+      "title": "Frieren: Beyond Journey's End",
+      "year": 2023,
+      "type": "tv",
+      "status": "completed",
+      "genres": ["adventure", "drama", "fantasy"],
+      "synopsis": "An elf mage outlives her companions and starts, too late, to learn them.",
+      "rating": 8.9,
+      "audio": "Subtitled",
+      "trendingRank": 3,
+      "seasons": [{ "number": 1, "episodeCount": 1 }],
+      "episodes": [
+        {
+          "id": "frieren-s1e1",
+          "season": 1,
+          "number": 1,
+          "title": "Closing the Journey",
+          "runtimeMinutes": 30,
+          "sources": [
+            {
+              "label": "Server 1 — HD",
+              "kind": "iframe",
+              "url": "https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ",
+              "note": "iframe demo",
+              "provider": "direct-embed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "sintel-demo-movie",
+      "tmdbId": 0,
+      "tmdbMediaType": "movie",
+      "title": "Sintel (Demo Movie)",
+      "year": 2010,
+      "type": "movie",
+      "status": "completed",
+      "genres": ["fantasy", "drama"],
+      "synopsis": "Blender's open-movie short, used here as a legal stand-in so the movie flow is testable end to end.",
+      "rating": 7.2,
+      "audio": "Subtitled",
+      "trendingRank": 4,
+      "episodes": [
+        {
+          "id": "sintel-demo-movie-m1",
+          "season": 1,
+          "number": 1,
+          "title": "Sintel",
+          "runtimeMinutes": 15,
+          "sources": [
+            {
+              "label": "Server 1 — HD",
+              "kind": "video",
+              "url": "https://media.w3.org/2010/05/sintel/trailer.mp4",
+              "note": "MP4 · CC-licensed",
+              "provider": "self-hosted"
+            },
+            {
+              "label": "Server 2 — Fast",
+              "kind": "iframe",
+              "url": "https://www.youtube-nocookie.com/embed/eRsGyueVLvQ",
+              "note": "iframe demo",
+              "provider": "direct-embed"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+# Example import file. Copy to data/import/sources.csv and fill with rows for sources
+# you host yourself or are licensed/authorised to embed.
+#
+# adapter=value meaning:
+#   drive-preview : a Google Drive file id of a file you uploaded/own (its default audio plays)
+#   self-hosted   : https URL to your own .m3u8 / .mp4 (Cloudflare Stream, R2/S3 signed URL, nginx…)
+#   direct-embed  : an https embed URL on a host in EMBED_HOST_ALLOWLIST
+#   coming-soon   : renders the tab greyed out ("Coming Soon"), no value needed
+#
+# lang=hi REQUIRES hindi_confirmed=yes — the importer refuses otherwise (drive files only
+# play their default track, so a human has to watch EP1 before we label it "Hindi").
+#
+# Header line below must stay exactly as-is (first non-# line = column names).
+slug,season,episode,series_title,tmdb_id,type,label,adapter,value,note,lang,hindi_confirmed
+blue-box,1,1,,0,tv,Server 1 — HD,drive-preview,REPLACE_WITH_YOUR_OWN_DRIVE_FILE_ID,Drive · Hindi dub,hi,yes
+blue-box,1,1,,0,tv,Server 2 — Fast,self-hosted,https://cdn.example.com/anime/blue-box/s01e01/master.m3u8,HLS · 1080p,en,
+blue-box,1,2,,0,tv,Server 1 — HD,drive-preview,REPLACE_WITH_YOUR_OWN_DRIVE_FILE_ID_E02,Drive · Hindi dub,hi,yes
+blue-box,1,2,,0,tv,Server 4 — India,coming-soon,,Coming soon,unknown,
+solo-leveling,1,1,,0,tv,Server 2 — Fast,self-hosted,https://cdn.example.com/anime/solo-leveling/s01e01.mp4,MP4 · 720p,en,
